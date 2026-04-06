@@ -1,3 +1,6 @@
+# My Personal Portfolio
+A responsive personal website built to showcase my projects, skills, and journey as a Computer Engineering student at COEP Tech.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
