@@ -192,7 +192,7 @@ performance efficiently using modern programming practices.
 </div>
 </a>
 
-<a href="https://github.com"
+<a href="https://github.com/shreyashevkar-28/My_Portfolio.git"
 target="_blank"
 className="flex bg-white dark:bg-gray-800 rounded shadow hover:scale-[1.02] transition p-4 gap-6"
 >
@@ -206,7 +206,7 @@ Personal Portfolio Website
 
 <p className="text-gray-600 dark:text-gray-300">
 A responsive portfolio website developed using React and Tailwind CSS
-to showcase projects, skills and certifications.
+to showcase my projects, skills and certifications.
 </p>
 
 </div>
