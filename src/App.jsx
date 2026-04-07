@@ -3,7 +3,7 @@ import { Link } from "react-scroll"
 
 import profile from "./assets/profile.jpeg"
 import project1 from "./assets/project1.jpg"
-import project2 from "./assets/project1.jpg"
+import project2 from "./assets/proj2.PNG"
 import cert1 from "./assets/cert1.jpg"
 import cert2 from "./assets/cert2.jpg"
 import cert3 from "./assets/cert3.png"
