@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-portfolio</title>
+    <title>Shreya Shevkar | Portfolio</title>
+    <style>
+      /* Reset #root so position:sticky on navbar works.
+         sticky breaks if any ancestor has overflow, padding,
+         max-width centering, or acts as a containing block. */
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; height: 100%; }
+      body { overflow-x: hidden; }
+      #root { all: unset; display: block; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
