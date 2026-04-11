@@ -4,9 +4,11 @@ import { Link } from "react-scroll"
 import profile from "./assets/profile.jpeg"
 import project1 from "./assets/project1.jpg"
 import project2 from "./assets/proj2.PNG"
+import project3 from "./assets/proj3.jpg"
 import cert1 from "./assets/cert1.jpg"
 import cert2 from "./assets/cert2.jpg"
 import cert3 from "./assets/cert3.png"
+import cert4 from "./assets/cert1.jpg"
 
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
@@ -468,6 +470,7 @@ const certs = [
   { img: cert1, name: 'Python Programming Certification', link: cert1 },
   { img: cert2, name: 'Web Development Certification',    link: cert2 },
   { img: cert3, name: 'Java Programming Certification',   link: cert3 },
+  { img: cert4, name: 'Java Programming Certification',   link: cert4 },
 ]
 
 const contacts = [
@@ -591,12 +594,22 @@ export default function App() {
               <p className="project-desc">A system designed to manage student records, grades and academic performance efficiently using modern programming practices.</p>
             </div>
           </a>
+
           <a href="https://github.com/shreyashevkar-28/My_Portfolio.git" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-2">
             <img src={project2} alt="Portfolio Website" className="project-img" />
             <div className="project-body">
               <div className="project-number">02 / Project</div>
               <div className="project-title">Personal Portfolio Website</div>
               <p className="project-desc">A responsive portfolio website developed using React and Tailwind CSS to showcase my projects, skills and certifications.</p>
+            </div>
+          </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-3">
+            <img src={project3} alt="Anti-Snooze" className="project-img" />
+            <div className="project-body">
+              <div className="project-number">03 / Project</div>
+              <div className="project-title">Anti-Snooze</div>
+              <p className="project-desc">Description of Anti-Snooze here...</p>
             </div>
           </a>
         </div>
