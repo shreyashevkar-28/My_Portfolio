@@ -592,22 +592,23 @@ export default function App() {
           <div className="section-tag">Work</div>
           <h2 className="section-title">Featured Projects</h2>
         </div>
-        <div className="projects-grid">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-1">
-            <img src={project1} alt="Smart Code Search" className="project-img" />
+
+          <a href="https://github.com/shreyashevkar-28/My_Portfolio.git" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-2">
+            <img src={project1} alt="Portfolio Website" className="project-img" />
             <div className="project-body">
               <div className="project-number">01 / Project</div>
-              <div className="project-title">Smart Code Search</div>
-              <p className="project-desc">A system designed to manage student records, grades and academic performance efficiently using modern programming practices.</p>
+              <div className="project-title">Personal Portfolio Website</div>
+              <p className="project-desc">A responsive portfolio website developed using React and Tailwind CSS to showcase my projects, skills and certifications.</p>
             </div>
           </a>
 
-          <a href="https://github.com/shreyashevkar-28/My_Portfolio.git" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-2">
-            <img src={project2} alt="Portfolio Website" className="project-img" />
+          <div className="projects-grid">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-1">
+            <img src={project2} alt="Smart Code Search" className="project-img" />
             <div className="project-body">
               <div className="project-number">02 / Project</div>
-              <div className="project-title">Personal Portfolio Website</div>
-              <p className="project-desc">A responsive portfolio website developed using React and Tailwind CSS to showcase my projects, skills and certifications.</p>
+              <div className="project-title">Smart Code Search</div>
+              <p className="project-desc">A system designed to manage student records, grades and academic performance efficiently using modern programming practices.</p>
             </div>
           </a>
 
