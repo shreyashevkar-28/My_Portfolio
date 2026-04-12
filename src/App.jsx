@@ -2,13 +2,15 @@ import { useEffect } from "react"
 import { Link } from "react-scroll"
 
 import profile from "./assets/profile.jpeg"
-import project1 from "./assets/project1.jpg"
-import project2 from "./assets/proj2.PNG"
-import project3 from "./assets/proj3.jpg"
+import project1 from "./assets/proj1.PNG"
+import project2 from "./assets/proj2.jpg"
+import project3 from "./assets/proj3.png"
 import cert1 from "./assets/cert1.jpg"
 import cert2 from "./assets/cert2.jpg"
-import cert3 from "./assets/cert3.png"
-import cert4 from "./assets/cert1.jpg"
+import cert3 from "./assets/cert3.jpg"
+import cert4 from "./assets/cert4.jpg"
+import cert5 from "./assets/cert5.png"
+import cert6 from "./assets/cert6.jpg"
 
 const styles = `
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
@@ -53,19 +55,19 @@ const styles = `
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
   .nav-brand {
     font-family: 'Manrope', sans-serif;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 900;
     color: #38bdf8;
   }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links { display: flex; gap: 1.5rem; list-style: none; }
   .nav-link {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: #64748b;
+    color: #64748f;
     cursor: pointer;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -83,6 +85,9 @@ const styles = `
   }
   .nav-link:hover { color: #e2e8f0; }
   .nav-link:hover::after { width: 100%; }
+
+  .nav-link.active { color: #e2e8f0; }
+  .nav-link.active::after { width: 100%; }
 
   /* ── HOME ── */
   #home {
@@ -286,7 +291,7 @@ const styles = `
   .project-card {
     height: 150px;
     background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 3px solid rgba(255,255,255,0.06);
     border-radius: 0.9rem;
     overflow: hidden;
     display: flex;
@@ -460,10 +465,10 @@ function useReveal() {
 }
 
 const skills = [
-  { icon: '⌨️', title: 'Languages',          items: ['C', 'C++', 'Java', 'Python'] },
+  { icon: '💻', title: 'Languages',          items: ['C', 'C++', 'Java', 'Python'] },
   { icon: '🌐', title: 'Web Development',     items: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'] },
-  { icon: '🛠️', title: 'Tools & Databases',  items: ['VS Code', 'IntelliJ IDEA', 'MySQL', 'MongoDB'] },
-  { icon: '🤝', title: 'Professional Skills', items: ['Leadership', 'Teamwork', 'Project Management', 'Critical Thinking'] },
+  { icon: '🛠', title: 'Tools & Databases',  items: ['VS Code', 'IntelliJ IDEA', 'MySQL', 'MongoDB'] },
+  { icon: '💡', title: 'Professional Skills', items: ['Leadership', 'Teamwork', 'Project Management', 'Critical Thinking'] },
 ]
 
 const certs = [
@@ -471,6 +476,8 @@ const certs = [
   { img: cert2, name: 'Web Development Certification',    link: cert2 },
   { img: cert3, name: 'Java Programming Certification',   link: cert3 },
   { img: cert4, name: 'Java Programming Certification',   link: cert4 },
+  { img: cert5, name: 'Java Programming Certification',   link: cert5 },
+  { img: cert6, name: 'Java Programming Certification',   link: cert6 },
 ]
 
 const contacts = [
@@ -502,7 +509,7 @@ export default function App() {
             {navItems.map(id => (
               <li key={id}>
                 <Link to={id} smooth duration={500} offset={-58} spy className="nav-link">
-                  {id === 'certifications' ? 'Certs' : id.charAt(0).toUpperCase() + id.slice(1)}
+                  {id === 'certifications' ? 'Certifications' : id.charAt(0).toUpperCase() + id.slice(1)}
                 </Link>
               </li>
             ))}
@@ -543,9 +550,9 @@ export default function App() {
           <div className="about-stats reveal reveal-delay-2">
             {[
               { num: '2+',     label: 'Projects Built' },
-              { num: '3+',     label: 'Certifications' },
+              { num: '5+',     label: 'Certifications' },
               { num: 'B.Tech', label: 'Degree' },
-              { num: 'COEP',   label: 'University' },
+              { num: 'COEP Tech',   label: 'University' },
             ].map(s => (
               <div className="stat-card" key={s.label}>
                 <div className="stat-num">{s.num}</div>
