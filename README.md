@@ -127,10 +127,4 @@ npm run build
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 <p align="center">Made with ❤️ by Shreya Sunil Shevkar © 2026</p>
