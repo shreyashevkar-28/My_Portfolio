@@ -1,19 +1,136 @@
-# My Personal Portfolio
-A responsive personal website built to showcase my projects, skills, and journey as a Computer Engineering student at COEP Tech.
+# 🌐 Shreya Sunil Shevkar — Personal Portfolio
 
-# React + Vite
+A responsive, dark-themed personal portfolio website built with **React** and **Vite**, showcasing my projects, skills, and certifications.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> _Add your deployed link here once hosted (e.g. Vercel / Netlify)_
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Preview
 
-## Expanding the ESLint configuration
+![Portfolio Preview](./src/assets/proj2.PNG)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- **Dark theme** with a subtle grid background
+- **Sticky navbar** with smooth scroll and active section highlighting
+- **Animated sections** — fade-in on scroll, slide-in on page load
+- **Responsive design** — works on mobile, tablet, and desktop
+- Sections: Home · About · Skills · Projects · Certifications · Contact
+
+---
+
+## 🛠️ Built With
+
+| Technology | Purpose |
+|---|---|
+| React 18 | UI framework |
+| Vite | Build tool & dev server |
+| react-scroll | Smooth scrolling & active nav |
+| Inter + Manrope | Google Fonts |
+| Plain CSS (inline) | All styling |
+
+---
+
+## 📁 Project Structure
+
+```
+my-portfolio/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   ├── profile.jpeg
+│   │   ├── project1.jpg
+│   │   ├── proj2.PNG
+│   │   ├── cert1.jpg
+│   │   ├── cert2.jpg
+│   │   └── cert3.png
+│   ├── App.jsx        ← Main component + all styles
+│   ├── App.css        ← Intentionally empty
+│   ├── index.css      ← Minimal reset
+│   └── main.jsx       ← React entry point
+├── index.html         ← Root HTML with #root reset
+└── package.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or above)
+- npm
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/shreyashevkar-28/My_Portfolio.git
+
+# 2. Navigate into the project
+cd my_portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+
+The app will run at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## ➕ How to Add Content
+
+### Add a New Project
+1. Place your screenshot in `src/assets/` (e.g. `project3.jpg`)
+2. Import it in `App.jsx`:
+   ```js
+   import project3 from "./assets/project3.jpg"
+   ```
+3. Add a new `<a>` block inside the `projects-grid` section in `App.jsx`
+
+### Add a New Certificate
+1. Place the certificate image in `src/assets/` (e.g. `cert4.jpg`)
+2. Import it in `App.jsx`:
+   ```js
+   import cert4 from "./assets/cert4.jpg"
+   ```
+3. Add a new entry to the `certs` array in `App.jsx`:
+   ```js
+   { img: cert4, name: 'Your Certification Name', link: cert4 }
+   ```
+
+---
+
+## 📬 Contact
+
+| Platform | Link |
+|---|---|
+| Email | shreyashevkar@gmail.com |
+| LinkedIn | [linkedin.com/in/shreyashevkar](https://www.linkedin.com/in/shreya-shevkar-908b11340/) |
+| GitHub | [github.com/shreyashevkar-28](https://github.com/shreyashevkar-28) |
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">Made with ❤️ by Shreya Sunil Shevkar © 2026</p>
