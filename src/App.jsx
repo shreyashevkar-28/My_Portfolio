@@ -55,7 +55,7 @@ const styles = `
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem;
+    padding: 0.8rem 1rem;
   }
   .nav-brand {
     font-family: 'Manrope', sans-serif;
@@ -448,7 +448,7 @@ const styles = `
   }
 `
 
-function useReveal() {
+function useReveal() {  //animation while scrolling
   useEffect(() => {
     const els = document.querySelectorAll('.reveal')
     const obs = new IntersectionObserver(entries => {
@@ -467,17 +467,17 @@ function useReveal() {
 const skills = [
   { icon: '💻', title: 'Languages',          items: ['C', 'C++', 'Java', 'Python'] },
   { icon: '🌐', title: 'Web Development',     items: ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'] },
-  { icon: '🛠', title: 'Tools & Databases',  items: ['VS Code', 'IntelliJ IDEA', 'MySQL', 'MongoDB'] },
+  { icon: '🛠', title: 'Tools & Databases',  items: ['VS Code', 'Git', 'GitHub', 'MySQL', 'MongoDB'] },
   { icon: '💡', title: 'Professional Skills', items: ['Leadership', 'Teamwork', 'Project Management', 'Critical Thinking'] },
 ]
 
 const certs = [
-  { img: cert1, name: 'Python Programming Certification', link: cert1 },
-  { img: cert2, name: 'Web Development Certification',    link: cert2 },
-  { img: cert3, name: 'Java Programming Certification',   link: cert3 },
-  { img: cert4, name: 'Java Programming Certification',   link: cert4 },
-  { img: cert5, name: 'Java Programming Certification',   link: cert5 },
-  { img: cert6, name: 'Java Programming Certification',   link: cert6 },
+  { img: cert1, name: 'BIS Online Quiz', link: cert1 },
+  { img: cert2, name: 'BIS Online Quiz', link: cert2 },
+  { img: cert3, name: 'MyBharat Essay Competition', link: cert3 },
+ // { img: cert4, name: 'Certification', link: cert4 },
+ // { img: cert5, name: 'Certification', link: cert5 },
+  { img: cert6, name: 'HackTheRank Quiz Competition', link: cert6 },
 ]
 
 const contacts = [
@@ -524,7 +524,7 @@ export default function App() {
         <div className="home-text">
           <div className="home-greeting">Hello, World</div>
           <h1 className="home-name">Shreya Sunil Shevkar</h1>
-          <p className="home-role"><span>Computer Engineering</span> Student</p>
+          <p className="home-role"><span>Computer Engineering Student</span></p>
           <p className="home-desc">Aspiring software developer passionate about building modern web applications and solving real-world problems through technology.</p>
           <div className="home-cta">
             <Link to="projects" smooth duration={500} offset={-58} className="btn-primary">View Projects ↓</Link>
@@ -544,8 +544,8 @@ export default function App() {
           <div className="about-text reveal reveal-delay-1">
             <p><strong>Hi, I'm Shreya</strong> — a Computer Engineering student passionate about building impactful technology.</p>
             <p>🎓 Pursuing <strong>B.Tech in Computer Science & Engineering</strong> at COEP Technological University, Pune.</p>
-            <p>💻 I enjoy working with C, C++, Java, and Web Development while strengthening my understanding of AI, Data Structures, Algorithms, and Software Development.</p>
-            <p>🚀 My focus is on improving problem-solving skills, building meaningful projects, and exploring Artificial Intelligence and innovative software systems. I believe technology has the power to bridge inequality and solve real-world problems.</p>
+            <p>💻 I enjoy working with C, C++, Java, and Web Development while strengthening my understanding of AI, Data Structures and Algorithms.</p>
+            <p>🚀 My focus is on improving problem-solving skills, building meaningful projects, and exploring Artificial Intelligence and innovative software systems.</p>
           </div>
           <div className="about-stats reveal reveal-delay-2">
             {[
@@ -593,6 +593,7 @@ export default function App() {
           <h2 className="section-title">Featured Projects</h2>
         </div>
 
+        <div className="projects-grid">
           <a href="https://github.com/shreyashevkar-28/My_Portfolio.git" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-2">
             <img src={project1} alt="Portfolio Website" className="project-img" />
             <div className="project-body">
@@ -602,24 +603,24 @@ export default function App() {
             </div>
           </a>
 
-          <div className="projects-grid">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-1">
-            <img src={project2} alt="Smart Code Search" className="project-img" />
-            <div className="project-body">
-              <div className="project-number">02 / Project</div>
-              <div className="project-title">Smart Code Search</div>
-              <p className="project-desc">A system designed to manage student records, grades and academic performance efficiently using modern programming practices.</p>
-            </div>
-          </a>
-
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-3">
             <img src={project3} alt="Anti-Snooze" className="project-img" />
             <div className="project-body">
-              <div className="project-number">03 / Project</div>
-              <div className="project-title">Anti-Snooze</div>
-              <p className="project-desc">Description of Anti-Snooze here...</p>
+              <div className="project-number">02 / Project</div>
+              <div className="project-title">Anti-Snooze Alarm Clock System</div>
+              <p className="project-desc">Anti-Snooze is a modern, full-stack digital alarm clock designed for students with struggling with oversleeping. Unlike traditional alarms, this application locks the screen and forces the user to solve a cognitive puzzle before the alarm can be dismissed.</p>
             </div>
           </a>
+
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-1">
+            <img src={project2} alt="Smart Code Search" className="project-img" />
+            <div className="project-body">
+              <div className="project-number">03 / Project</div>
+              <div className="project-title">Smart Code Search</div>
+              <p className="project-desc">Description of Code Snippet Search System.</p>
+            </div>
+          </a>
+
         </div>
       </section>
 

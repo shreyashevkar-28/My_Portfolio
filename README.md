@@ -12,7 +12,7 @@ A responsive, dark-themed personal portfolio website built with **React** and **
 
 ## 📸 Preview
 
-![Portfolio Preview](./src/assets/proj2.PNG)
+![Portfolio Preview](./src/assets/proj1.PNG)
 
 ---
 
