@@ -6,11 +6,11 @@ A responsive, dark-themed personal portfolio website built with **React** and **
 
 ## 🔗 Live Demo
 
-> _Add your deployed link here once hosted (e.g. Vercel / Netlify)_
+> https://shreyashevkar-portfolio.vercel.app/
 
 ---
 
-## 📸 Preview
+## 📸 Preview 
 
 ![Portfolio Preview](./src/assets/proj1.PNG)
 
@@ -62,60 +62,6 @@ my-portfolio/
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v18 or above)
-- npm
-
-### Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/shreyashevkar-28/My_Portfolio.git
-
-# 2. Navigate into the project
-cd my_portfolio
-
-# 3. Install dependencies
-npm install
-
-# 4. Start the development server
-npm run dev
-```
-
-The app will run at `http://localhost:5173`
-
-### Build for Production
-
-```bash
-npm run build
-```
-
----
-
-## ➕ How to Add Content
-
-### Add a New Project
-1. Place your screenshot in `src/assets/` (e.g. `project3.jpg`)
-2. Import it in `App.jsx`:
-   ```js
-   import project3 from "./assets/project3.jpg"
-   ```
-3. Add a new `<a>` block inside the `projects-grid` section in `App.jsx`
-
-### Add a New Certificate
-1. Place the certificate image in `src/assets/` (e.g. `cert4.jpg`)
-2. Import it in `App.jsx`:
-   ```js
-   import cert4 from "./assets/cert4.jpg"
-   ```
-3. Add a new entry to the `certs` array in `App.jsx`:
-   ```js
-   { img: cert4, name: 'Your Certification Name', link: cert4 }
-   ```
-
----
 
 ## 📬 Contact
 
@@ -127,4 +73,4 @@ npm run build
 
 ---
 
-<p align="center">Made with ❤️ by Shreya Sunil Shevkar © 2026</p>
+<p align="center">© Shreya Sunil Shevkar 2026</p>

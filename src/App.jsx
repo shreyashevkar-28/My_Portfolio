@@ -3,8 +3,8 @@ import { Link } from "react-scroll"
 
 import profile from "./assets/profile.jpeg"
 import project1 from "./assets/proj1.PNG"
-import project2 from "./assets/proj2.jpg"
-import project3 from "./assets/proj3.png"
+import project2 from "./assets/proj3.png"
+import project3 from "./assets/proj2.PNG"
 import cert1 from "./assets/cert1.jpg"
 import cert2 from "./assets/cert2.jpg"
 import cert3 from "./assets/cert3.jpg"
@@ -473,7 +473,7 @@ const skills = [
 
 const certs = [
   { img: cert1, name: 'BIS Online Quiz', link: cert1 },
-  { img: cert2, name: 'BIS Online Quiz', link: cert2 },
+//  { img: cert2, name: 'BIS Online Quiz', link: cert2 },
   { img: cert3, name: 'MyBharat Essay Competition', link: cert3 },
  // { img: cert4, name: 'Certification', link: cert4 },
  // { img: cert5, name: 'Certification', link: cert5 },
@@ -603,7 +603,7 @@ export default function App() {
             </div>
           </a>
 
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-3">
+          <a href="https://github.com/shreyashevkar-28/Anti-Snooze" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-3">
             <img src={project3} alt="Anti-Snooze" className="project-img" />
             <div className="project-body">
               <div className="project-number">02 / Project</div>
@@ -612,14 +612,14 @@ export default function App() {
             </div>
           </a>
 
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-1">
+        {/*  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-card reveal reveal-delay-1">
             <img src={project2} alt="Smart Code Search" className="project-img" />
             <div className="project-body">
               <div className="project-number">03 / Project</div>
               <div className="project-title">Smart Code Search</div>
               <p className="project-desc">Description of Code Snippet Search System.</p>
             </div>
-          </a>
+          </a> */}
 
         </div>
       </section>
